@@ -1,0 +1,21 @@
+---
+layout: archive
+title: "Photos"
+permalink: /photos/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% for album in site.photos reversed %}
+  <div class="photo-album">
+    <h3><a href="{{ album.url | relative_url }}">{{ album.title }}</a></h3>
+    <div class="thumbs">
+      {% assign imgs = album.images | slice: 0, 3 %}
+      {% for img in imgs %}
+        <img src="{{ img | relative_url }}" alt="{{ album.title }} image" style="max-width:150px; margin-right:0.5rem;" />
+      {% endfor %}
+    </div>
+    <p class="album-excerpt">{{ album.excerpt }}</p>
+  </div>
+{% endfor %}

@@ -1,0 +1,11 @@
+<div class="project-card">
+  <h3 class="project-title">
+    <a href="{{ include.project.url | relative_url }}">{{ include.project.title }}</a>
+  </h3>
+  <p class="project-meta">
+    {{ include.project.date | date: "%Y-%m-%d" }}
+    {% if include.project.github %} · <a href="{{ include.project.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+    {% if include.project.demo %} · <a href="{{ include.project.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
+  </p>
+  <p class="project-excerpt">{{ include.project.excerpt }}</p>
+</div>
