@@ -1,0 +1,26 @@
+{% include base_path %}
+
+<div class="post-single">
+  <article class="post-item" itemscope itemtype="http://schema.org/CreativeWork">
+
+    <!-- 标题 -->
+    <h2 class="post-title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+    </h2>
+
+    <!-- 发布时间 -->
+    {% if post.date %}
+      <p class="post-date">
+        Published on: {{ post.date | date: "%b %d, %Y" }}
+      </p>
+    {% endif %}
+
+    <!-- 缩略内容 -->
+    {% if post.excerpt %}
+      <p class="post-excerpt" itemprop="description">
+        {{ post.excerpt | markdownify | strip_html }}
+      </p>
+    {% endif %}
+
+  </article>
+</div>
