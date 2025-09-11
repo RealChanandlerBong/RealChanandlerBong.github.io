@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+title                    : "南风知我意"
 title_separator          : "-"
-name                     : &name "Derrick Chang"
+name                     : &name "真难"
 description              : &description "personal description"
 url                      : https://realchanandlerbong.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -22,10 +22,10 @@ repository               : "realchanandlerbong/realchanandlerbong.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Zhennan Chang"
-  pronouns         : "him/his"
-  bio              : "Can also call me Derrick"
+  avatar           : "chanandler-bong.jpeg"
+  name             : "真难"
+  pronouns         : "Him/his/he"
+  bio              : "得渡人稀"
   location         : "Beijing, China"
   employer         : "Tsinghua University/NYU"
   uri              : # URL
@@ -223,6 +223,9 @@ collections:
   photos:
     output: true
     permalink: /:collection/:path/
+  puffy:
+    output: true
+    permalink: /:collection/:path/
   teaching:
     output: true
     permalink: /:collection/:path/
@@ -236,17 +239,7 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
-  # _projects
-  - scope:
-      path: ""
-      type: projects
-    values:
-      layout: single
-      author_profile: true
-      comments: true
-      share: true
-      related: true
-  # Photos
+  # Photos/Experiences
   - scope:
       path: ""
       type: photos
@@ -256,7 +249,6 @@ defaults:
       read_time: true
       comments: true
       share: true
-      related: true
   # _posts
   - scope:
       path: ""
@@ -268,6 +260,28 @@ defaults:
       comments: true
       share: true
       related: true
+
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+      share: true
+      related: true
+
+  # puffy
+  - scope:
+      path: ""
+      type: puffy
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+      share: true
+    
   # _pages
   - scope:
       path: ""
