@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: single
 title: "Puffy"
 permalink: /puffy/
-author_profile: true
 ---
 
 ![Puffy](/images/puffy/puffy-be-good.jpg)
