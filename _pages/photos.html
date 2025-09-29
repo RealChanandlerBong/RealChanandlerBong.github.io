@@ -12,7 +12,7 @@ author_profile: true
     <h3><a href="{{ album.url | relative_url }}">{{ album.title }}</a></h3>
     <div class="thumbs">
       <p class="photo-meta">
-        {{ include.album.date | date: "%Y-%m-%d" }}
+        {{ album.date | date: "%Y-%m-%d" }}
         {% if album.location %} · {{ album.location }}{% endif %}
       </p>
       {% assign imgs = album.images | slice: 0, 3 %}
