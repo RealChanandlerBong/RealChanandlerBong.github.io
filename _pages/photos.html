@@ -11,6 +11,10 @@ author_profile: true
   <div class="photo-album">
     <h3><a href="{{ album.url | relative_url }}">{{ album.title }}</a></h3>
     <div class="thumbs">
+      <p class="photo-meta">
+        {{ include.album.date | date: "%Y-%m-%d" }}
+        {% if album.location %} · {{ album.location }}{% endif %}
+      </p>
       {% assign imgs = album.images | slice: 0, 3 %}
       {% for img in imgs %}
         <img src="{{ img | relative_url }}" alt="{{ album.title }} image" style="max-width:150px; margin-right:0.5rem;" />

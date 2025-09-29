@@ -2,6 +2,7 @@
 title: "我离开美团的那天"
 collection: photos
 date: 2025-09-10
+location: 北京，望京
 permalink: /2025/09/bye-meituan/
 images:
   - /photos/2025-09-10-bye-meituan/1.jpg
