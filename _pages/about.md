@@ -1,10 +1,10 @@
 ---
 permalink: /
-title: "踩踩，记得回踩哦。"
+title: "还没有想好写啥"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-还没有想好写啥
+不是什么好人
