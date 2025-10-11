@@ -31,7 +31,7 @@ permalink: /puffy/
 
 和北京隔壁房间的马里奥
 
-![Puffy](/images/puffy/puffy-mario.jpg)
+![Puffy](/images/puffy/puffy-mario.JPG)
 
 成为了好朋友（但和后者的关系总觉得有些怪怪的）。
 
